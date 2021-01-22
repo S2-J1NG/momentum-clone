@@ -1,11 +1,46 @@
+#wrapper {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 2rem;
+}
 .main {
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
 }
 body {
   background-color: #bdc3c7;
   color: white;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 6rem;
+}
+.form input,
+select,
+textarea {
+  color: white;
+  text-align: center;
+}
+
+.form input {
+  color: white;
+  text-align: center;
+  border-style: none;
+  background: transparent;
+  font-size: 2rem;
+  outline: none;
+}
+
+.greetings {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .form,
@@ -36,8 +71,23 @@ body {
   animation: fadeIn 0.5s linear;
 }
 
-.toDolist {
-  display: inline-flex;
+.toDoForm {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.toDoForm input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  text-size: 2rem;
 }
