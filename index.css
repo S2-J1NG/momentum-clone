@@ -1,5 +1,11 @@
+.main {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
 body {
-  color: #34495e;
+  background-color: #bdc3c7;
+  color: white;
 }
 
 .form,
@@ -9,4 +15,29 @@ body {
 
 .showing {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.toDolist {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
